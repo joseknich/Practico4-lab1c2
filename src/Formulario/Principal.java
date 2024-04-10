@@ -22,6 +22,9 @@ public class Principal extends javax.swing.JFrame {
         setTitle("Conversor de Temperatura");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        jBConvertir.setBorder(new RoundedBorder(10));
+        jBSalir.setBorder(new RoundedBorder(25));
+
     }
 
     /**
@@ -58,13 +61,15 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanelImagen.add(jBSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 450, 80, 40));
         jPanelImagen.add(jTcelsius, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 80, 40));
+
+        jTfaraday1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanelImagen.add(jTfaraday1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 80, 40));
 
         jBConvertir.setBackground(new java.awt.Color(51, 51, 255));
         jBConvertir.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jBConvertir.setForeground(new java.awt.Color(255, 255, 255));
         jBConvertir.setText("Convertir");
-        jBConvertir.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 0, 255)));
+        jBConvertir.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jBConvertir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jBConvertir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +121,7 @@ public class Principal extends javax.swing.JFrame {
         }
         
         limpiarCampos();
+        
          
     }//GEN-LAST:event_jBConvertirActionPerformed
 
@@ -166,4 +172,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField jTcelsius;
     private javax.swing.JTextField jTfaraday1;
     // End of variables declaration//GEN-END:variables
+
 }
+    
+

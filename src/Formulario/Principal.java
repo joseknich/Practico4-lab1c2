@@ -23,7 +23,7 @@ public class Principal extends javax.swing.JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         jBConvertir.setBorder(new RoundedBorder(10));
-        jBSalir.setBorder(new RoundedBorder(25));
+        jBSalir.setBorder(new RoundedBorder(15));
 
     }
 

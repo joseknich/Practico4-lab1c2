@@ -34,7 +34,7 @@ public class RoundedBorder implements Border {
 
     @Override
     public boolean isBorderOpaque() {
-        return false;
+        return true;
     }
 
 }
